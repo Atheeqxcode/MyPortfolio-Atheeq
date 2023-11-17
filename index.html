@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant&family=Montserrat:wght@100&family=Prosto+One&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Atheeq</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: rgb(250, 250, 250);
+            font-family: 'Cormorant', serif;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Prosto One', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgb(255, 18, 18);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        nav ul li a {
+
+            color: white;
+            list-style-type: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a:hover {
+            color: rgb(0, 0, 0);
+            size: 30px;
+
+        }
+
+        .left {
+            font-size: 35px;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 0;
+
+        }
+
+
+
+        .rightSection {
+            width: 35%;
+            padding: 20px 20px;
+            margin-right: 50px;
+
+        }
+
+        .leftSection {
+            background-color: none;
+            font-size: 3rem;
+            display: flex;
+            margin: 90px 0px;
+        }
+
+        .leftSection .btn {
+            background: rgb(223, 77, 77);
+            border: 2px solid white;
+            border-radius: 4px;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 5px
+        }
+        .leftSection .button{
+            padding: 50px 0px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        #element {
+            color: #FF4A1C;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            color: white;
+            font-size: 1.5rem;
+            margin: auto;
+
+        }
+
+        main hr {
+            border: 0;
+            background: red;
+            height: 1px;
+            margin: 40px 80px;
+        }
+
+        .class {
+            color: rgb(212, 163, 163);
+
+        }
+
+        .footer {
+            display: flex;
+            background-color:red;
+            height: 250px;
+            padding: 20px;
+            justify-content: space-evenly;
+
+        }
+
+        .footer ul {
+            padding: auto;
+            display: block;
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 220px;
+        }
+
+        footer .footerRights {
+            text-align: center;
+            color: red;
+            padding: 12px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Atheeq's Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/"> HOME</a></li>
+                    <li><a href="/"> ABOUT ME</a></li>
+                    <li><a href="/"> MY PROJECTS</a></li>
+                    <li><a href="/"> CONTACT ME</a></a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>
+                    Myself <span class="red">Atheeq</span>,
+                    <div>I'm a Passionate</div>
+                    <span id="element"></span>
+                    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                    <script>
+                        var typed = new Typed('#element', {
+                            strings: ['Engineer', ' web developer.'],
+                            typeSpeed: 100,
+                        });
+                    </script>
+                    <div class="buttons">
+                        <button class="btn">Resume</button>
+                        <button class="btn">Linked In</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="developer.png" height="350px ">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="class">Where i have studied</span>
+
+
+            <div>
+                Qualifications
+            </div>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footerFirst">
+                <h3> Atheeq's portfolio</h3>
+            </div>
+            <div class="footerSecond">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Location</li>
+                    <li>Whatsapp me</li>
+
+                </ul>
+            </div>
+            <div class="footerThird"></div>
+            <div class="footerFourth"></div>
+
+
+        </div>
+        <div class="footerRights">
+            www.AtheeqsPortfolio.com | All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
